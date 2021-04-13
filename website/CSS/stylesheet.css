@@ -14,8 +14,12 @@ p {
 	min-width:10%;
     	max-width:80%;
     	text-align:center;
-     	margin:0 auto;
-    
+     	margin:0 auto;   
 }
 
+.logo{
+	
+	text-align: center;
+
+}
 

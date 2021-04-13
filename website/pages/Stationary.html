@@ -1,0 +1,180 @@
+<html>
+<link rel="stylesheet" href="../CSS/stylesheet.css">
+<link rel="shortcut icon" type="image/x-icon" href="../images/icon.jpg"/>
+<head>
+<title> NikNats</title>
+<h1>Stationary</h1>
+
+
+
+<div id="main">
+ 
+</div>
+
+</head>
+<style>
+body {
+  background-image: url('../images/background.png');
+  background-size: 100% 100%;
+}
+    body {
+  font-family: "Lato", sans-serif;
+  transition: background-color .5s;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left .25s;
+  overflow-x: hidden;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidenav {padding-top: 0px;}
+  .sidenav a {font-size: 1em;}
+}
+
+/* The side navigation menu */
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  /* Originally 1C2541 */
+  background-color: #A9A9A9;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 40px; /* Place content 60px from the top */
+  transition: .25s; /* 0.5 second transition effect to slide in the sidenav */
+  white-space: nowrap;
+}
+/* The navigation menu links */
+.sidenav a {
+  padding: 2px 16px 2px 16px;
+  margin: 2px 4px 2px 4px;
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #000000;
+  display: block;
+  transition: 0.25s;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 9px;
+  left: 12px;
+  font-size: 36px;
+}
+.openbtn {
+  position: fixed;
+  z-index: 2;
+  top:0;
+  top: 2px;
+  left: 10px;
+}
+.items {
+  position: absolute;
+  /* Increase this by ~60 if adding additional items */
+  min-height: 370px;
+  height: auto;
+  bottom: 0;
+  top: 0;
+  padding-top: 50px;
+  padding-bottom: 40px;
+  user-select: none;
+}
+.top {
+  position: absolute;
+  top: 60px;
+  padding-bottom: 60px
+}
+.top a:hover{
+  background-color: #FFFFFF;
+  width: 100%;
+  transition: .25s;
+}
+.bottom {
+  position: absolute;
+  bottom: 60px;
+}
+.bottom a:hover {
+  color: #0c6f7c
+}
+
+
+.top-bar {
+  position:fixed;
+  top:0;
+  background-color: #242424;
+  width: 100%;
+  height: 55px;
+  left:0
+}
+.top-bar img {
+  position:relative;
+  top:7px;
+}
+
+.top-logo {
+  position: absolute;
+
+  top:-5.5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  left:50vw;
+  transform: translate(-50%)
+}
+</style>
+
+    <script>  function openNav() {
+    document.getElementById("sidenav").style.width = "150px";
+    document.getElementById("main").style.marginLeft = "200px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+  
+function closeNav() {
+    document.getElementById("sidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "rgba(0,0,0,0)";
+  }
+
+</script>
+<body>
+        <image class="openbtn"
+			src="../assets/meatball_nav.png"
+
+			onclick="openNav()">
+
+         <div id="sidenav" class="sidenav">
+                <div>
+                <img 
+                    class="closebtn"
+                    src="../assets/close_nav.png"
+                    alt="Close Menu"
+                    height="2%"
+                    width="10%"
+                    onclick="closeNav()"
+                >
+                </div>
+                <div class="items">
+                    <div class="top">
+                        <a href="Home.html">Home</a>
+                        <a href="Homeware.html">Homeware</a>
+                        <a href="Clothing.html">Clothing</a>
+                        <a href="Keyrings.html">Keyrings</a>
+                        <a href="Stationary.html">Stationary</a>
+                        <a href="Sticker.html">Stickers</a>
+                        <a href="Specials.html">Specials</a>
+                        
+                    </div>
+                    
+            </div>
+
+
+</Body>
+
+</html>
